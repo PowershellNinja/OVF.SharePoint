@@ -156,7 +156,7 @@ Describe "Operational Validation of SharePoint 2013" {
 			
 			$webApp = Get-SPWebApplication -Identity $webAppUrl
 
-			$sites = Get-SPSite -WebApplication $webApp
+			$sites = Get-SPSite -WebApplication $webApp -Limit All
 
 			$result = $sites | Test-SPSite
 
