@@ -52,8 +52,11 @@ function Test-OPSValWebAppPoolState{
 }
 
 #Modules
+Import-Module Pester
+Import-Module OperationValidation
 Add-PSSnapin Microsoft.Sharepoint.Powershell -ErrorAction SilentlyContinue
 Import-Module WebAdministration
+
 
 Describe "Operational Validation of SharePoint 2013" {
     
