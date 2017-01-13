@@ -178,6 +178,25 @@ Describe "Operational Validation of SharePoint 2013" {
 		}
 	}
 
+	
+	Context "SP Upgrade Status"{
+
+		#SharePoint DB Tests
+
+		It "The SharePoint Databases should have no Upgrades pending"{
+			
+			$dbs = Get-SPDatabase
+			$dbsWithUpgradeNeeded = $dbs | Where-Object{$_.NeedsUpgrade -eq $true}
+
+			if($dbsWithUpgradeNeeded){
+				Write-Warning "DBs needing Upgrade:"
+				Write-Host ($dbsWithUpgradeNeeded | Out-String)
+			}
+			
+			$dbsWithUpgradeNeeded | Should be $null
+
+		}
+	}
 
 }
 

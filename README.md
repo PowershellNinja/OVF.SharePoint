@@ -26,4 +26,5 @@ Requirements:
   * Central Administation (URL needs to be changed)
 * SharePoint SiteCollection Health Tests (Test-SPSite)
   * Custom (WebApplication URL needs to be changed)
+* SharePoint Databases should have to Upgrades pending
 	
