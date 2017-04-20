@@ -1,3 +1,8 @@
+1.0.0.3 (20.04.2017)
+* Added new Test File for SharePoint Enterprise Search
+Credits for all the cool functions:
+https://blogs.msdn.microsoft.com/knutbran/2012/11/30/how-to-view-the-status-of-the-sharepoint-2013-search-service/
+
 1.0.0.2 (13.01.2017)
 * Added Test: SharePoint Database Upgrade Status
 
